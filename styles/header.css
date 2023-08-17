@@ -1,0 +1,142 @@
+.header{
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  top:0;
+  left: 0;
+  right:0;
+  height:55px;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(232, 232, 232);
+  border-bottom-style: solid;
+  z-index:100;
+  
+}
+.left-section{
+  
+
+  
+  display: flex;
+ align-items: center;
+ 
+  
+  
+}
+.middle-section{
+  
+  flex: 1;
+  max-width: 500px;
+  display:flex;
+   align-items:center; 
+   flex-shrink: 0; 
+  
+}
+.right-section{
+  
+  width: 200px;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.hamburger{
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  
+}
+.youtube{
+  height:20px;
+  
+}
+.search-button{
+  
+  margin-left:-1px;
+  background-color:   #e9e6e6;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(203, 200, 200);
+  
+  
+  height: 39px;
+  width:60px;
+  margin-right: 10px;
+  
+
+}
+.voice-search{
+  height:39px;
+  width:40px;
+  border: none;
+  border-radius: 20px;
+  background-color:  #e9e6e6;
+} 
+.voice-search-icon{
+ 
+  height:25px;
+  
+}
+.search-bar{
+  display:flex;
+  flex:1; 
+  height:36px;
+  padding-left:7px;
+  border-width:1px;
+  border-color:rgb(203, 200, 200);
+  border-style:solid;
+  border-radius:2px;  
+  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+  width: 0 ;
+  
+}
+.search-bar::placeholder{
+  font-family:Roboto;
+  
+}
+
+.search-icon{
+  
+  height: 25px;
+}
+
+.upload-icon{
+  
+  height: 24px;
+}
+.apps-icon{
+  height: 24px;
+}
+.notification-icon{
+  height:23px;
+}
+.mypic{
+  height: 40px;
+  border-radius:20px;
+}
+.search-button,.voice-search{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.search-button .tooltip,.voice-search .tooltip{
+  background-color: rgb(115, 113, 113);
+  color: white;
+  font-size: 12px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top:4px;
+  padding-bottom:6px;
+  position:absolute;
+  border-radius:2px;
+  bottom:-32px;
+  opacity:0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.search-button:hover .tooltip, .voice-search:hover .tooltip{
+  opacity:1;
+}
